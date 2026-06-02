@@ -166,7 +166,7 @@
 <header class="top" id="topbar" style="display:none">
   <div class="top-inner">
     <div class="badge">🏆</div>
-    <div class="brand"><h1>MONCHO CHAVEA <span>WC</span> 2026</h1><p>Mundial · USA · Canadá · México</p></div>
+    <div class="brand"><h1>SANCUS <span>WC</span> 2026</h1><p>Mundial · USA · Canadá · México</p></div>
     <div class="me-chip" id="meChip"></div>
   </div>
   <div class="statusbar"><div class="si">
@@ -232,49 +232,189 @@ const TROPHIES=[
  {id:'dirty_t',ic:'😈',name:'Equipo más sucio',desc:'Selección más sancionada',type:'team',pts:2}
 ];
 const PLAYERS=[
+ // Argentina
  ['Lionel Messi','🇦🇷'],['Lautaro Martínez','🇦🇷'],['Julián Álvarez','🇦🇷'],['Rodrigo De Paul','🇦🇷'],
  ['Alexis Mac Allister','🇦🇷'],['Ángel Di María','🇦🇷'],['Cristian Romero','🇦🇷'],['Emiliano Martínez','🇦🇷'],
- ['Enzo Fernández','🇦🇷'],['Lisandro Martínez','🇦🇷'],['Nahuel Molina','🇦🇷'],
+ ['Enzo Fernández','🇦🇷'],['Lisandro Martínez','🇦🇷'],['Nahuel Molina','🇦🇷'],['Nicolás González','🇦🇷'],
+ ['Germán Pezzella','🇦🇷'],['Leandro Paredes','🇦🇷'],['Nicolás Otamendi','🇦🇷'],
+ ['Marcos Acuña','🇦🇷'],['Paulo Dybala','🇦🇷'],['Giovani Lo Celso','🇦🇷'],['Exequiel Palacios','🇦🇷'],
+ // Francia
  ['Kylian Mbappé','🇫🇷'],['Antoine Griezmann','🇫🇷'],['Ousmane Dembélé','🇫🇷'],['Eduardo Camavinga','🇫🇷'],
  ['Aurélien Tchouaméni','🇫🇷'],['Théo Hernández','🇫🇷'],['Mike Maignan','🇫🇷'],['William Saliba','🇫🇷'],
- ['Marcus Thuram','🇫🇷'],['Randal Kolo Muani','🇫🇷'],['Dayot Upamecano','🇫🇷'],
+ ['Marcus Thuram','🇫🇷'],['Randal Kolo Muani','🇫🇷'],['Dayot Upamecano','🇫🇷'],['Bradley Barcola','🇫🇷'],
+ ['Warren Zaïre-Emery','🇫🇷'],['Ibrahima Konaté','🇫🇷'],['Michael Olise','🇫🇷'],
+ ['Jules Koundé','🇫🇷'],['Benjamin Pavard','🇫🇷'],['Youssouf Fofana','🇫🇷'],['Kingsley Coman','🇫🇷'],['Christopher Nkunku','🇫🇷'],['Adrien Rabiot','🇫🇷'],
+ // Brasil
  ['Vinicius Jr','🇧🇷'],['Rodrygo','🇧🇷'],['Endrick','🇧🇷'],['Raphinha','🇧🇷'],['Savinho','🇧🇷'],
  ['Bruno Guimarães','🇧🇷'],['Lucas Paquetá','🇧🇷'],['Casemiro','🇧🇷'],['Marquinhos','🇧🇷'],['Alisson','🇧🇷'],
+ ['Gabriel Martinelli','🇧🇷'],['Danilo','🇧🇷'],['Éder Militão','🇧🇷'],['Gabriel Magalhães','🇧🇷'],
+ ['Ederson','🇧🇷'],['Pedro','🇧🇷'],['Gerson','🇧🇷'],['André','🇧🇷'],['Estêvão','🇧🇷'],['Renan Lodi','🇧🇷'],
+ // España
  ['Lamine Yamal','🇪🇸'],['Pedri','🇪🇸'],['Gavi','🇪🇸'],['Rodri','🇪🇸'],['Álvaro Morata','🇪🇸'],
  ['Dani Olmo','🇪🇸'],['Nico Williams','🇪🇸'],['Fabián Ruiz','🇪🇸'],['Unai Simón','🇪🇸'],
  ['Alejandro Grimaldo','🇪🇸'],['Ferran Torres','🇪🇸'],['Aymeric Laporte','🇪🇸'],
+ ['Mikel Merino','🇪🇸'],['Robin Le Normand','🇪🇸'],['Martín Zubimendi','🇪🇸'],
+ ['Marc Cucurella','🇪🇸'],['Pau Cubarsí','🇪🇸'],['Joselu','🇪🇸'],['Mikel Oyarzabal','🇪🇸'],['Yeremy Pino','🇪🇸'],['David Raya','🇪🇸'],
+ // Portugal
  ['Cristiano Ronaldo','🇵🇹'],['Bruno Fernandes','🇵🇹'],['Bernardo Silva','🇵🇹'],['Rafael Leão','🇵🇹'],
  ['Vitinha','🇵🇹'],['Rúben Dias','🇵🇹'],['Diogo Costa','🇵🇹'],['Pedro Neto','🇵🇹'],
  ['João Neves','🇵🇹'],['Gonçalo Ramos','🇵🇹'],['João Cancelo','🇵🇹'],
+ ['Nuno Mendes','🇵🇹'],['Francisco Conceição','🇵🇹'],['Rúben Neves','🇵🇹'],
+ ['Diogo Dalot','🇵🇹'],['Gonçalo Inácio','🇵🇹'],['Raphael Guerreiro','🇵🇹'],['Trincão','🇵🇹'],
+ // Inglaterra
  ['Jude Bellingham','🏴'],['Harry Kane','🏴'],['Bukayo Saka','🏴'],['Phil Foden','🏴'],
  ['Cole Palmer','🏴'],['Trent Alexander-Arnold','🏴'],['Declan Rice','🏴'],
  ['Jordan Pickford','🏴'],['Marcus Rashford','🏴'],['Kieran Trippier','🏴'],
+ ['Levi Colwill','🏴'],['Anthony Gordon','🏴'],['Kobbie Mainoo','🏴'],['Ezri Konsa','🏴'],
+ ['John Stones','🏴'],['Marc Guehi','🏴'],['Ollie Watkins','🏴'],['Jack Grealish','🏴'],['Eberechi Eze','🏴'],['Jarrod Bowen','🏴'],['Conor Gallagher','🏴'],
+ // Alemania
  ['Florian Wirtz','🇩🇪'],['Jamal Musiala','🇩🇪'],['Kai Havertz','🇩🇪'],['Leroy Sané','🇩🇪'],
  ['Joshua Kimmich','🇩🇪'],['Antonio Rüdiger','🇩🇪'],['Manuel Neuer','🇩🇪'],['Ilkay Gündogan','🇩🇪'],
+ ['Nico Schlotterbeck','🇩🇪'],['Deniz Undav','🇩🇪'],['Chris Führich','🇩🇪'],['Aleksandar Pavlovic','🇩🇪'],
+ ['Thomas Müller','🇩🇪'],['Serge Gnabry','🇩🇪'],['David Raum','🇩🇪'],['Jonathan Tah','🇩🇪'],['Robert Andrich','🇩🇪'],['Pascal Groß','🇩🇪'],
+ // Países Bajos
  ['Virgil van Dijk','🇳🇱'],['Cody Gakpo','🇳🇱'],['Xavi Simons','🇳🇱'],['Tijjani Reijnders','🇳🇱'],
  ['Denzel Dumfries','🇳🇱'],['Memphis Depay','🇳🇱'],['Bart Verbruggen','🇳🇱'],
+ ['Brian Brobbey','🇳🇱'],['Jurriën Timber','🇳🇱'],['Donyell Malen','🇳🇱'],['Nathan Aké','🇳🇱'],
+ ['Frenkie de Jong','🇳🇱'],['Matthijs de Ligt','🇳🇱'],['Stefan de Vrij','🇳🇱'],['Ryan Gravenberch','🇳🇱'],['Jeremie Frimpong','🇳🇱'],
+ // Bélgica
  ['Kevin De Bruyne','🇧🇪'],['Thibaut Courtois','🇧🇪'],['Romelu Lukaku','🇧🇪'],
- ['Jérémy Doku','🇧🇪'],['Leandro Trossard','🇧🇪'],
+ ['Jérémy Doku','🇧🇪'],['Leandro Trossard','🇧🇪'],['Lois Openda','🇧🇪'],
+ ['Amadou Onana','🇧🇪'],['Youri Tielemans','🇧🇪'],['Charles De Ketelaere','🇧🇪'],['Arthur Theate','🇧🇪'],
+ ['Zeno Debast','🇧🇪'],['Timothy Castagne','🇧🇪'],['Johan Bakayoko','🇧🇪'],
+ // Uruguay
  ['Darwin Núñez','🇺🇾'],['Federico Valverde','🇺🇾'],['Rodrigo Bentancur','🇺🇾'],
- ['Ronald Araújo','🇺🇾'],['José María Giménez','🇺🇾'],
+ ['Ronald Araújo','🇺🇾'],['José María Giménez','🇺🇾'],['Nicolás De La Cruz','🇺🇾'],
+ ['Mathías Olivera','🇺🇾'],['Agustín Canobbio','🇺🇾'],['Facundo Pellistri','🇺🇾'],
+ ['Giorgian De Arrascaeta','🇺🇾'],['Sebastián Coates','🇺🇾'],['Maximiliano Araújo','🇺🇾'],
+ // Colombia
  ['James Rodríguez','🇨🇴'],['Luis Díaz','🇨🇴'],['Richard Ríos','🇨🇴'],
- ['Jhon Durán','🇨🇴'],['Davinson Sánchez','🇨🇴'],
+ ['Jhon Durán','🇨🇴'],['Davinson Sánchez','🇨🇴'],['Rafael Santos Borré','🇨🇴'],
+ ['Jorge Carrascal','🇨🇴'],['Jhon Córdoba','🇨🇴'],['Yerson Mosquera','🇨🇴'],
+ ['Luis Sinisterra','🇨🇴'],['Daniel Muñoz','🇨🇴'],['Kevin Castaño','🇨🇴'],
+ // Marruecos
  ['Achraf Hakimi','🇲🇦'],['Hakim Ziyech','🇲🇦'],['Youssef En-Nesyri','🇲🇦'],
- ['Sofyan Amrabat','🇲🇦'],['Yassine Bounou','🇲🇦'],
+ ['Sofyan Amrabat','🇲🇦'],['Yassine Bounou','🇲🇦'],['Azzedine Ounahi','🇲🇦'],
+ ['Abdessamad Ezzalzouli','🇲🇦'],['Noussair Mazraoui','🇲🇦'],['Bilal El Khannouss','🇲🇦'],
+ ['Selim Amallah','🇲🇦'],['Ilias Chair','🇲🇦'],['Anass Zaroury','🇲🇦'],
+ // Noruega
  ['Erling Haaland','🇳🇴'],['Martin Ødegaard','🇳🇴'],['Alexander Sørloth','🇳🇴'],['Sander Berge','🇳🇴'],
+ ['Marcus Pedersen','🇳🇴'],['Patrick Berg','🇳🇴'],['Ørjan Nyland','🇳🇴'],['Kristian Thorstvedt','🇳🇴'],
+ // Suecia
  ['Viktor Gyökeres','🇸🇪'],['Alexander Isak','🇸🇪'],['Dejan Kulusevski','🇸🇪'],['Emil Forsberg','🇸🇪'],
+ ['Victor Lindelöf','🇸🇪'],['Robin Olsen','🇸🇪'],['Mattias Svanberg','🇸🇪'],['Samuel Chukwueze','🇸🇪'],
+ // Senegal
  ['Sadio Mané','🇸🇳'],['Édouard Mendy','🇸🇳'],['Kalidou Koulibaly','🇸🇳'],['Ismaïla Sarr','🇸🇳'],
- ['Mohamed Salah','🇪🇬'],['Omar Marmoush','🇪🇬'],
+ ['Pape Matar Sarr','🇸🇳'],['Nicolas Jackson','🇸🇳'],['Krepin Diatta','🇸🇳'],['Boulaye Dia','🇸🇳'],
+ // Egipto
+ ['Mohamed Salah','🇪🇬'],['Omar Marmoush','🇪🇬'],['Ahmed El-Shenawy','🇪🇬'],['Mostafa Mohamed','🇪🇬'],
+ ['Trézéguet','🇪🇬'],['Tarek Hamed','🇪🇬'],['Ramadan Sobhi','🇪🇬'],
+ // Corea del Sur
  ['Son Heung-min','🇰🇷'],['Kim Min-jae','🇰🇷'],['Lee Kang-in','🇰🇷'],
+ ['Hwang Hee-chan','🇰🇷'],['Cho Gue-sung','🇰🇷'],['Kim Jin-su','🇰🇷'],['Oh Hyeon-gyu','🇰🇷'],
+ // Japón
  ['Takumi Minamino','🇯🇵'],['Daichi Kamada','🇯🇵'],['Ritsu Doan','🇯🇵'],['Wataru Endo','🇯🇵'],
+ ['Keito Nakamura','🇯🇵'],['Takefusa Kubo','🇯🇵'],['Kaoru Mitoma','🇯🇵'],['Yukinari Sugawara','🇯🇵'],
+ ['Ayase Ueda','🇯🇵'],['Hidemasa Morita','🇯🇵'],
+ // Canadá
  ['Alphonso Davies','🇨🇦'],['Jonathan David','🇨🇦'],['Tajon Buchanan','🇨🇦'],['Cyle Larin','🇨🇦'],
- ['Christian Pulisic','🇺🇸'],['Weston McKennie','🇺🇸'],['Gio Reyna','🇺🇸'],['Tim Weah','🇺🇸'],['Folarin Balogun','🇺🇸'],
+ ['Stephen Eustáquio','🇨🇦'],['Alistair Johnston','🇨🇦'],['Milan Borjan','🇨🇦'],['Liam Millar','🇨🇦'],
+ ['Kamal Miller','🇨🇦'],['Ismaël Koné','🇨🇦'],
+ // Estados Unidos
+ ['Christian Pulisic','🇺🇸'],['Weston McKennie','🇺🇸'],['Gio Reyna','🇺🇸'],['Tim Weah','🇺🇸'],
+ ['Folarin Balogun','🇺🇸'],['Tyler Adams','🇺🇸'],['Matt Turner','🇺🇸'],['Sergiño Dest','🇺🇸'],
+ ['Yunus Musah','🇺🇸'],['Ricardo Pepi','🇺🇸'],['Josh Sargent','🇺🇸'],
+ // México
  ['Santiago Giménez','🇲🇽'],['Edson Álvarez','🇲🇽'],['Hirving Lozano','🇲🇽'],['Raúl Jiménez','🇲🇽'],
+ ['Guillermo Ochoa','🇲🇽'],['Héctor Herrera','🇲🇽'],['Roberto Alvarado','🇲🇽'],
+ ['Alexis Vega','🇲🇽'],['Uriel Antuna','🇲🇽'],['Jorge Sánchez','🇲🇽'],
+ // Ecuador
  ['Enner Valencia','🇪🇨'],['Moisés Caicedo','🇪🇨'],['Pervis Estupiñán','🇪🇨'],
+ ['Ángelo Preciado','🇪🇨'],['Jeremy Sarmiento','🇪🇨'],['John Yeboah','🇪🇨'],['Djorkaeff Reasco','🇪🇨'],
+ // Turquía
  ['Hakan Çalhanoğlu','🇹🇷'],['Arda Güler','🇹🇷'],['Kenan Yıldız','🇹🇷'],['Merih Demiral','🇹🇷'],
+ ['Çağlar Söyüncü','🇹🇷'],['Barış Alper Yılmaz','🇹🇷'],['Cenk Tosun','🇹🇷'],['Ferdi Kadıoğlu','🇹🇷'],
+ // Croacia
  ['Luka Modrić','🇭🇷'],['Mateo Kovačić','🇭🇷'],['Joško Gvardiol','🇭🇷'],['Dominik Livaković','🇭🇷'],
+ ['Ante Budimir','🇭🇷'],['Borna Sosa','🇭🇷'],['Lovro Majer','🇭🇷'],['Ivan Perišić','🇭🇷'],
+ // Suiza
  ['Granit Xhaka','🇨🇭'],['Breel Embolo','🇨🇭'],['Manuel Akanji','🇨🇭'],['Yann Sommer','🇨🇭'],
- ['Sardar Azmoun','🇮🇷'],['Mehdi Taremi','🇮🇷'],
+ ['Xherdan Shaqiri','🇨🇭'],['Ruben Vargas','🇨🇭'],['Noah Okafor','🇨🇭'],['Fabian Rieder','🇨🇭'],
+ // Irán
+ ['Sardar Azmoun','🇮🇷'],['Mehdi Taremi','🇮🇷'],['Ali Gholizadeh','🇮🇷'],['Saman Ghoddos','🇮🇷'],
+ ['Ehsan Hajsafi','🇮🇷'],['Alireza Beiranvand','🇮🇷'],['Karim Ansarifard','🇮🇷'],
+ // Austria
+ ['Marko Arnautović','🇦🇹'],['David Alaba','🇦🇹'],['Marcel Sabitzer','🇦🇹'],['Konrad Laimer','🇦🇹'],
+ ['Christoph Baumgartner','🇦🇹'],['Michael Gregoritsch','🇦🇹'],['Nicolas Seiwald','🇦🇹'],
+ ['Patrick Wimmer','🇦🇹'],['Florian Grillitsch','🇦🇹'],['Patrick Pentz','🇦🇹'],
+ // Argelia
+ ['Riyad Mahrez','🇩🇿'],['Islam Slimani','🇩🇿'],['Ismaël Bennacer','🇩🇿'],['Said Benrahma','🇩🇿'],
+ ['Adam Ounas','🇩🇿'],['Yacine Brahimi','🇩🇿'],['Ramy Bensebaini','🇩🇿'],['Farès Chaïbi','🇩🇿'],
+ ['Billal Brahimi','🇩🇿'],['Andy Delort','🇩🇿'],
+ // Paraguay
+ ['Miguel Almirón','🇵🇾'],['Julio Enciso','🇵🇾'],['Antonio Sanabria','🇵🇾'],['Gustavo Gómez','🇵🇾'],
+ ['Diego Gómez','🇵🇾'],['Óscar Romero','🇵🇾'],['Richard Sánchez','🇵🇾'],['Junior Alonso','🇵🇾'],
+ // Australia
+ ['Mathew Ryan','🇦🇺'],['Mitchell Duke','🇦🇺'],['Riley McGree','🇦🇺'],['Harry Souttar','🇦🇺'],
+ ['Martin Boyle','🇦🇺'],['Awer Mabil','🇦🇺'],['Craig Goodwin','🇦🇺'],['Ajdin Hrustić','🇦🇺'],
+ ['Keanu Baccus','🇦🇺'],['Cameron Devlin','🇦🇺'],
+ // Ghana
+ ['Thomas Partey','🇬🇭'],['Jordan Ayew','🇬🇭'],['Mohamed Kudus','🇬🇭'],['Inaki Williams','🇬🇭'],
+ ['Abdul Fatawu','🇬🇭'],['Antoine Semenyo','🇬🇭'],['Kamaldeen Sulemana','🇬🇭'],['Ernest Nuamah','🇬🇭'],
+ ['Daniel Amartey','🇬🇭'],['Tariq Lamptey','🇬🇭'],
+ // Costa de Marfil
+ ['Sébastien Haller','🇨🇮'],['Franck Kessié','🇨🇮'],['Simon Adingra','🇨🇮'],['Nicolas Pépé','🇨🇮'],
+ ['Wilfried Zaha','🇨🇮'],['Ibrahim Sangaré','🇨🇮'],['Jean-Michaël Seri','🇨🇮'],['Maxwel Cornet','🇨🇮'],
+ ['Eric Bailly','🇨🇮'],['Serge Aurier','🇨🇮'],
+ // Chequia
+ ['Tomáš Souček','🇨🇿'],['Patrik Schick','🇨🇿'],['Adam Hložek','🇨🇿'],['Lukáš Provod','🇨🇿'],
+ ['Vladimír Coufal','🇨🇿'],['Pavel Šulc','🇨🇿'],['Ondřej Kolář','🇨🇿'],['Antonín Barák','🇨🇿'],
+ // Escocia
+ ['Andrew Robertson','🏴'],['Scott McTominay','🏴'],['John McGinn','🏴'],['Callum McGregor','🏴'],
+ ['Ryan Christie','🏴'],['Che Adams','🏴'],['Lawrence Shankland','🏴'],['Billy Gilmour','🏴'],
+ // Bosnia
+ ['Edin Džeko','🇧🇦'],['Ermedin Demirović','🇧🇦'],['Anel Ahmedhodžić','🇧🇦'],['Sead Kolašinac','🇧🇦'],
+ ['Luka Menalo','🇧🇦'],['Haris Hajradinović','🇧🇦'],['Amer Gojak','🇧🇦'],
+ // Túnez
+ ['Wahbi Khazri','🇹🇳'],['Hannibal Mejbri','🇹🇳'],['Ellyes Skhiri','🇹🇳'],['Dylan Bronn','🇹🇳'],
+ ['Mohamed Drager','🇹🇳'],['Anis Slimane','🇹🇳'],['Naim Sliti','🇹🇳'],['Seifeddine Jaziri','🇹🇳'],
+ // Arabia Saudita
+ ['Salem Al-Dawsari','🇸🇦'],['Mohammed Al-Owais','🇸🇦'],['Saleh Al-Shehri','🇸🇦'],
+ ['Firas Al-Buraikan','🇸🇦'],['Saud Abdulhamid','🇸🇦'],['Ali Al-Bulayhi','🇸🇦'],
+ ['Mohammed Al-Burayk','🇸🇦'],['Fahad Al-Muwallad','🇸🇦'],
+ // Catar
+ ['Akram Afif','🇶🇦'],['Almoez Ali','🇶🇦'],['Hassan Al-Haydos','🇶🇦'],
+ ['Assim Madibo','🇶🇦'],['Abdelkarim Hassan','🇶🇦'],['Meshaal Barsham','🇶🇦'],['Ismail Mohammad','🇶🇦'],
+ // Irak
+ ['Ahmed Yasin','🇮🇶'],['Aymen Hussein','🇮🇶'],['Ali Adnan','🇮🇶'],['Amjad Attwan','🇮🇶'],
+ ['Humam Tariq','🇮🇶'],['Mohanad Ali','🇮🇶'],['Bashar Resan','🇮🇶'],
+ // Uzbekistán
+ ['Eldor Shomurodov','🇺🇿'],['Jaloliddin Masharipov','🇺🇿'],['Abbosbek Fayzullaev','🇺🇿'],
+ ['Dostonbek Khamdamov','🇺🇿'],['Khojimat Erkinov','🇺🇿'],['Otabek Shukurov','🇺🇿'],['Laziz Azimov','🇺🇿'],
+ // Panamá
+ ['Rommel Quioto','🇵🇦'],['Adalberto Carrasquilla','🇵🇦'],['Rolando Blackburn','🇵🇦'],
+ ['Amir Murillo','🇵🇦'],['Alberto Quintero','🇵🇦'],['Edgar Bárcenas','🇵🇦'],['Cecilio Waterman','🇵🇦'],
+ // Jordania
+ ['Mousa Al-Tamari','🇯🇴'],['Ahmad Gharaibeh','🇯🇴'],['Zaid Darwish','🇯🇴'],
+ ['Yazan Al-Naimat','🇯🇴'],['Baha Faisal','🇯🇴'],['Nour Mansour','🇯🇴'],
+ // RD Congo
+ ['Cédric Bakambu','🇨🇩'],['Chancel Mbemba','🇨🇩'],['Dodi Lukébakio','🇨🇩'],
+ ['Yoane Wissa','🇨🇩'],['Arthur Masuaku','🇨🇩'],['Théo Bongonda','🇨🇩'],['Samuel Bastien','🇨🇩'],
+ // Sudáfrica
+ ['Percy Tau','🇿🇦'],['Themba Zwane','🇿🇦'],['Ronwen Williams','🇿🇦'],['Lyle Foster','🇿🇦'],
+ ['Teboho Mokoena','🇿🇦'],['Bongani Zungu','🇿🇦'],['Goodman Mosele','🇿🇦'],
+ // Nueva Zelanda
+ ['Chris Wood','🇳🇿'],['Winston Reid','🇳🇿'],['Joe Bell','🇳🇿'],['Liberato Cacace','🇳🇿'],
+ ['Matthew Garbett','🇳🇿'],['Ben Waine','🇳🇿'],['Dane Ingham','🇳🇿'],
+ // Haití
+ ['Duckens Nazon','🇭🇹'],['Frantzdy Pierrot','🇭🇹'],['Ernst Jouthe','🇭🇹'],
+ ['Loïck Landre','🇭🇹'],['James Léger','🇭🇹'],['Steeven Saba','🇭🇹'],
+ // Curazao
+ ['Leandro Bacuna','🇨🇼'],['Elson Hooi','🇨🇼'],['Jurgilio Winklaar','🇨🇼'],
+ ['Rangelo Janga','🇨🇼'],['Cuco Martina','🇨🇼'],['Charlton Vicento','🇨🇼'],
+ // Cabo Verde
+ ['Garry Rodrigues','🇨🇻'],['Júlio Tavares','🇨🇻'],['Ryan Mendes','🇨🇻'],
+ ['Jamiro Monteiro','🇨🇻'],['Dyego Sousa','🇨🇻'],['Diogo Gonçalves','🇨🇻'],
 ];
 function attachAC(wrap,onSelect){
  const inp=wrap.querySelector('.ac-inp'),drop=wrap.querySelector('.ac-drop');
@@ -292,10 +432,10 @@ function attachAC(wrap,onSelect){
   const items=[...drop.querySelectorAll('.ac-item')];
   if(e.key==='ArrowDown'){cur=Math.min(cur+1,items.length-1);items.forEach((el,i)=>el.classList.toggle('on',i===cur));e.preventDefault();}
   else if(e.key==='ArrowUp'){cur=Math.max(cur-1,0);items.forEach((el,i)=>el.classList.toggle('on',i===cur));e.preventDefault();}
-  else if(e.key==='Enter'&&cur>=0){pick(items[cur].dataset.n);}
+  else if(e.key==='Enter'){if(cur>=0){pick(items[cur].dataset.n);}else if(items.length){pick(items[0].dataset.n);}}
   else if(e.key==='Escape'){drop.style.display='none';}
  };
- inp.onblur=()=>setTimeout(()=>drop.style.display='none',150);
+ inp.onblur=()=>{onSelect(inp.value.trim());setTimeout(()=>drop.style.display='none',150);};
 }
 
 const PODIO=[
